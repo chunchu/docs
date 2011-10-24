@@ -8,27 +8,27 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Available builders &mdash; Sphinx 1.1 (hg) documentation</title>
+    <title>Available builders &mdash; Sphinx 1.1 documentation</title>
     
-    <link rel="stylesheet" href="static/default.css" type="text/css" />
-    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '1.1 (hg)',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within Sphinx 1.1 (hg) documentation"
-          href="static/opensearch.xml"/>
-    <link rel="top" title="Sphinx 1.1 (hg) documentation" href="index.html" />
+          title="Search within Sphinx 1.1 documentation"
+          href="_static/opensearch.xml"/>
+    <link rel="top" title="Sphinx 1.1 documentation" href="index.html" />
     <link rel="next" title="The build configuration file" href="config.html" />
     <link rel="prev" title="Sphinx Domains" href="domains.html" />
  
@@ -40,7 +40,7 @@
   </head>
   <body>
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<img src="static/sphinx.png" alt="Sphinx logo" />
+<img src="_static/sphinx.png" alt="Sphinx logo" />
 </div>
 
     <div class="related">
@@ -338,7 +338,7 @@ to standard output and to <tt class="file docutils literal"><span class="pre">ou
 <div class="section" id="serialization-builder-details">
 <span id="serialization-details"></span><h2>Serialization builder details<a class="headerlink" href="#serialization-builder-details" title="Permalink to this headline">¶</a></h2>
 <p>All serialization builders outputs one file per source file and a few special
-files.  They also copy the reST source files in the directory <tt class="docutils literal"><span class="pre">sources</span></tt>
+files.  They also copy the reST source files in the directory <tt class="docutils literal"><span class="pre">_sources</span></tt>
 under the output directory.</p>
 <p>The <a class="reference internal" href="#sphinx.builders.html.PickleHTMLBuilder" title="sphinx.builders.html.PickleHTMLBuilder"><tt class="xref py py-class docutils literal"><span class="pre">PickleHTMLBuilder</span></tt></a> is a builtin subclass that implements the pickle
 serialization interface.</p>
@@ -364,7 +364,7 @@ dictionary with the keys <tt class="docutils literal"><span class="pre">link</sp
 (title of the related document, as HTML).  <tt class="docutils literal"><span class="pre">parents</span></tt> is a list of
 relations, while <tt class="docutils literal"><span class="pre">prev</span></tt> and <tt class="docutils literal"><span class="pre">next</span></tt> are a single relation.</dd>
 <dt><tt class="docutils literal"><span class="pre">sourcename</span></tt></dt>
-<dd>The name of the source file under <tt class="docutils literal"><span class="pre">sources</span></tt>.</dd>
+<dd>The name of the source file under <tt class="docutils literal"><span class="pre">_sources</span></tt>.</dd>
 </dl>
 <p>The special files are located in the root output directory.  They are:</p>
 <dl class="docutils">
@@ -432,13 +432,13 @@ package is available on unpickling.</p>
                         title="next chapter">The build configuration file</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="sources/builders.txt"
+    <li><a href="_sources/builders.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -475,7 +475,7 @@ package is available on unpickling.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2007-2011, Georg Brandl.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1pre.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
     </div>
   </body>
 </html>

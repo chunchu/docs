@@ -8,28 +8,28 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>The WebSupport Class &mdash; static 1.1 (hg) documentation</title>
+    <title>The WebSupport Class &mdash; Sphinx 1.1 documentation</title>
     
-    <link rel="stylesheet" href="../static/default.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.1 (hg)',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
-          title="Search within static 1.1 (hg) documentation"
-          href="../static/opensearch.xml"/>
-    <link rel="top" title="static 1.1 (hg) documentation" href="../index.html" />
-    <link rel="up" title="static Web Support" href="../websupport.html" />
+          title="Search within Sphinx 1.1 documentation"
+          href="../_static/opensearch.xml"/>
+    <link rel="top" title="Sphinx 1.1 documentation" href="../index.html" />
+    <link rel="up" title="Sphinx Web Support" href="../websupport.html" />
     <link rel="next" title="Search Adapters" href="searchadapters.html" />
     <link rel="prev" title="Web Support Quick Start" href="quickstart.html" />
  
@@ -41,7 +41,7 @@
   </head>
   <body>
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<img src="../static/sphinx.png" alt="static logo" />
+<img src="../_static/sphinx.png" alt="Sphinx logo" />
 </div>
 
     <div class="related">
@@ -59,11 +59,11 @@
         <li class="right" >
           <a href="quickstart.html" title="Web Support Quick Start"
              accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">static home</a>&nbsp;|&nbsp;</li>
+        <li><a href="../index.html">Sphinx home</a>&nbsp;|&nbsp;</li>
         <li><a href="../contents.html">Documentation</a>
           &raquo;</li>
 
-          <li><a href="../websupport.html" accesskey="U">static Web Support</a> &raquo;</li> 
+          <li><a href="../websupport.html" accesskey="U">Sphinx Web Support</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -75,8 +75,8 @@
   <div class="section" id="the-websupport-class">
 <span id="websupportapi"></span><h1>The WebSupport Class<a class="headerlink" href="#the-websupport-class" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="static.websupport.WebSupport">
-<em class="property">class </em><tt class="descclassname">static.websupport.</tt><tt class="descname">WebSupport</tt><a class="headerlink" href="#static.websupport.WebSupport" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport">
+<em class="property">class </em><tt class="descclassname">sphinx.websupport.</tt><tt class="descname">WebSupport</tt><a class="headerlink" href="#sphinx.websupport.WebSupport" title="Permalink to this definition">¶</a></dt>
 <dd><p>The main API class for the web support package.  All interactions with the
 web support package should occur through this class.</p>
 <p>The class takes the following keyword arguments:</p>
@@ -85,18 +85,18 @@ web support package should occur through this class.</p>
 <dd>The directory containing reStructuredText source files.</dd>
 <dt>builddir</dt>
 <dd>The directory that build data and static files should be placed in.  This
-should be used when creating a <a class="reference internal" href="#static.websupport.WebSupport" title="static.websupport.WebSupport"><tt class="xref py py-class docutils literal"><span class="pre">WebSupport</span></tt></a> object that will be
+should be used when creating a <a class="reference internal" href="#sphinx.websupport.WebSupport" title="sphinx.websupport.WebSupport"><tt class="xref py py-class docutils literal"><span class="pre">WebSupport</span></tt></a> object that will be
 used to build data.</dd>
 <dt>datadir</dt>
 <dd>The directory that the web support data is in.  This should be used when
-creating a <a class="reference internal" href="#static.websupport.WebSupport" title="static.websupport.WebSupport"><tt class="xref py py-class docutils literal"><span class="pre">WebSupport</span></tt></a> object that will be used to retrieve data.</dd>
+creating a <a class="reference internal" href="#sphinx.websupport.WebSupport" title="sphinx.websupport.WebSupport"><tt class="xref py py-class docutils literal"><span class="pre">WebSupport</span></tt></a> object that will be used to retrieve data.</dd>
 <dt>search</dt>
 <dd>This may contain either a string (e.g. &#8216;xapian&#8217;) referencing a built-in
 search adapter to use, or an instance of a subclass of
-<a class="reference internal" href="searchadapters.html#static.websupport.search.BaseSearch" title="static.websupport.search.BaseSearch"><tt class="xref py py-class docutils literal"><span class="pre">BaseSearch</span></tt></a>.</dd>
+<a class="reference internal" href="searchadapters.html#sphinx.websupport.search.BaseSearch" title="sphinx.websupport.search.BaseSearch"><tt class="xref py py-class docutils literal"><span class="pre">BaseSearch</span></tt></a>.</dd>
 <dt>storage</dt>
 <dd>This may contain either a string representing a database uri, or an
-instance of a subclass of <a class="reference internal" href="storagebackends.html#static.websupport.storage.StorageBackend" title="static.websupport.storage.StorageBackend"><tt class="xref py py-class docutils literal"><span class="pre">StorageBackend</span></tt></a>.  If this is
+instance of a subclass of <a class="reference internal" href="storagebackends.html#sphinx.websupport.storage.StorageBackend" title="sphinx.websupport.storage.StorageBackend"><tt class="xref py py-class docutils literal"><span class="pre">StorageBackend</span></tt></a>.  If this is
 not provided, a new sqlite database will be created.</dd>
 <dt>moderation_callback</dt>
 <dd>A callable to be called when a new comment is added that is not
@@ -115,8 +115,8 @@ should be a string specifying that path (e.g. <tt class="docutils literal"><span
 <div class="section" id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <dl class="method">
-<dt id="static.websupport.WebSupport.build">
-<tt class="descclassname">WebSupport.</tt><tt class="descname">build</tt><big>(</big><big>)</big><a class="headerlink" href="#static.websupport.WebSupport.build" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport.build">
+<tt class="descclassname">WebSupport.</tt><tt class="descname">build</tt><big>(</big><big>)</big><a class="headerlink" href="#sphinx.websupport.WebSupport.build" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build the documentation. Places the data into the <cite>outdir</cite>
 directory. Use it like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">support</span> <span class="o">=</span> <span class="n">WebSupport</span><span class="p">(</span><span class="n">srcdir</span><span class="p">,</span> <span class="n">builddir</span><span class="p">,</span> <span class="n">search</span><span class="o">=</span><span class="s">&#39;xapian&#39;</span><span class="p">)</span>
@@ -129,8 +129,8 @@ It will also save node data to the database.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="static.websupport.WebSupport.get_document">
-<tt class="descclassname">WebSupport.</tt><tt class="descname">get_document</tt><big>(</big><em>docname</em>, <em>username=''</em>, <em>moderator=False</em><big>)</big><a class="headerlink" href="#static.websupport.WebSupport.get_document" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport.get_document">
+<tt class="descclassname">WebSupport.</tt><tt class="descname">get_document</tt><big>(</big><em>docname</em>, <em>username=''</em>, <em>moderator=False</em><big>)</big><a class="headerlink" href="#sphinx.websupport.WebSupport.get_document" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load and return a document from a pickle. The document will
 be a dict object which can be used to render a template:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">support</span> <span class="o">=</span> <span class="n">WebSupport</span><span class="p">(</span><span class="n">datadir</span><span class="o">=</span><span class="n">datadir</span><span class="p">)</span>
@@ -159,7 +159,7 @@ to be used during template rendering.</p>
 <li><strong>sidebar</strong>: The sidebar of the document as HTML</li>
 <li><strong>relbar</strong>: A div containing links to related documents</li>
 <li><strong>title</strong>: The title of the document</li>
-<li><strong>css</strong>: Links to css files used by static</li>
+<li><strong>css</strong>: Links to css files used by Sphinx</li>
 <li><strong>script</strong>: Javascript containing comment options</li>
 </ul>
 <p>This raises <tt class="xref py py-class docutils literal"><span class="pre">DocumentNotFoundError</span></tt>
@@ -175,8 +175,8 @@ if a document matching <cite>docname</cite> is not found.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="static.websupport.WebSupport.get_data">
-<tt class="descclassname">WebSupport.</tt><tt class="descname">get_data</tt><big>(</big><em>node_id</em>, <em>username=None</em>, <em>moderator=False</em><big>)</big><a class="headerlink" href="#static.websupport.WebSupport.get_data" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport.get_data">
+<tt class="descclassname">WebSupport.</tt><tt class="descname">get_data</tt><big>(</big><em>node_id</em>, <em>username=None</em>, <em>moderator=False</em><big>)</big><a class="headerlink" href="#sphinx.websupport.WebSupport.get_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the comments and source associated with <cite>node_id</cite>. If
 <cite>username</cite> is given vote information will be included with the
 returned comments. The default CommentBackend returns a dict with
@@ -256,8 +256,8 @@ the current source and the user&#8217;s proposed source.</td>
 </dd></dl>
 
 <dl class="method">
-<dt id="static.websupport.WebSupport.add_comment">
-<tt class="descclassname">WebSupport.</tt><tt class="descname">add_comment</tt><big>(</big><em>text</em>, <em>node_id=''</em>, <em>parent_id=''</em>, <em>displayed=True</em>, <em>username=None</em>, <em>time=None</em>, <em>proposal=None</em>, <em>moderator=False</em><big>)</big><a class="headerlink" href="#static.websupport.WebSupport.add_comment" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport.add_comment">
+<tt class="descclassname">WebSupport.</tt><tt class="descname">add_comment</tt><big>(</big><em>text</em>, <em>node_id=''</em>, <em>parent_id=''</em>, <em>displayed=True</em>, <em>username=None</em>, <em>time=None</em>, <em>proposal=None</em>, <em>moderator=False</em><big>)</big><a class="headerlink" href="#sphinx.websupport.WebSupport.add_comment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a comment to a node or another comment. Returns the comment
 in the same format as <tt class="xref py py-meth docutils literal"><span class="pre">get_comments()</span></tt>. If the comment is being
 attached to a node, pass in the node&#8217;s id (as a string) with the
@@ -294,8 +294,8 @@ in the optional <cite>username</cite> keyword argument:</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="static.websupport.WebSupport.process_vote">
-<tt class="descclassname">WebSupport.</tt><tt class="descname">process_vote</tt><big>(</big><em>comment_id</em>, <em>username</em>, <em>value</em><big>)</big><a class="headerlink" href="#static.websupport.WebSupport.process_vote" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport.process_vote">
+<tt class="descclassname">WebSupport.</tt><tt class="descname">process_vote</tt><big>(</big><em>comment_id</em>, <em>username</em>, <em>value</em><big>)</big><a class="headerlink" href="#sphinx.websupport.WebSupport.process_vote" title="Permalink to this definition">¶</a></dt>
 <dd><p>Process a user&#8217;s vote. The web support package relies
 on the API user to perform authentication. The API user will
 typically receive a comment_id and value from a form, and then
@@ -330,12 +330,12 @@ voting data. An example, once again in Flask:</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="static.websupport.WebSupport.get_search_results">
-<tt class="descclassname">WebSupport.</tt><tt class="descname">get_search_results</tt><big>(</big><em>q</em><big>)</big><a class="headerlink" href="#static.websupport.WebSupport.get_search_results" title="Permalink to this definition">¶</a></dt>
+<dt id="sphinx.websupport.WebSupport.get_search_results">
+<tt class="descclassname">WebSupport.</tt><tt class="descname">get_search_results</tt><big>(</big><em>q</em><big>)</big><a class="headerlink" href="#sphinx.websupport.WebSupport.get_search_results" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform a search for the query <cite>q</cite>, and create a set
 of search results. Then render the search results as html and
 return a context dict like the one created by
-<a class="reference internal" href="#static.websupport.WebSupport.get_document" title="static.websupport.WebSupport.get_document"><tt class="xref py py-meth docutils literal"><span class="pre">get_document()</span></tt></a>:</p>
+<a class="reference internal" href="#sphinx.websupport.WebSupport.get_document" title="sphinx.websupport.WebSupport.get_document"><tt class="xref py py-meth docutils literal"><span class="pre">get_document()</span></tt></a>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">document</span> <span class="o">=</span> <span class="n">support</span><span class="o">.</span><span class="n">get_search_results</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -356,8 +356,8 @@ return a context dict like the one created by
           </div>
         </div>
       </div>
-      <div class="staticsidebar">
-        <div class="staticsidebarwrapper">
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
   <h3><a href="../contents.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">The WebSupport Class</a><ul>
@@ -374,13 +374,13 @@ return a context dict like the one created by
                         title="next chapter">Search Adapters</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../sources/web/api.txt"
+    <li><a href="../_sources/web/api.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -409,16 +409,16 @@ return a context dict like the one created by
         <li class="right" >
           <a href="quickstart.html" title="Web Support Quick Start"
              >previous</a> |</li>
-        <li><a href="../index.html">static home</a>&nbsp;|&nbsp;</li>
+        <li><a href="../index.html">Sphinx home</a>&nbsp;|&nbsp;</li>
         <li><a href="../contents.html">Documentation</a>
           &raquo;</li>
 
-          <li><a href="../websupport.html" >static Web Support</a> &raquo;</li> 
+          <li><a href="../websupport.html" >Sphinx Web Support</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2007-2011, Georg Brandl.
-      Created using <a href="http://static.pocoo.org/">static</a> 1.1pre.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.
     </div>
   </body>
 </html>
