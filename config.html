@@ -10,8 +10,8 @@
     
     <title>The build configuration file &mdash; Sphinx 1.1 documentation</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,12 +22,12 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Sphinx 1.1 documentation"
-          href="_static/opensearch.xml"/>
+          href="static/opensearch.xml"/>
     <link rel="top" title="Sphinx 1.1 documentation" href="index.html" />
     <link rel="next" title="Internationalization" href="intl.html" />
     <link rel="prev" title="Available builders" href="builders.html" />
@@ -40,7 +40,7 @@
   </head>
   <body>
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<img src="_static/sphinx.png" alt="Sphinx logo" />
+<img src="static/sphinx.png" alt="Sphinx logo" />
 </div>
 
     <div class="related">
@@ -752,7 +752,7 @@ entries, and once as one page per starting letter.  Default is <tt class="docuti
 <dt id="confval-html_copy_source">
 <tt class="descname">html_copy_source</tt><a class="headerlink" href="#confval-html_copy_source" title="Permalink to this definition">¶</a></dt>
 <dd><p>If true, the reST sources are included in the HTML build as
-<tt class="file docutils literal"><span class="pre">_sources/</span><em><span class="pre">name</span></em></tt>.  The default is <tt class="docutils literal"><span class="pre">True</span></tt>.</p>
+<tt class="file docutils literal"><span class="pre">sources/</span><em><span class="pre">name</span></em></tt>.  The default is <tt class="docutils literal"><span class="pre">True</span></tt>.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">If this config value is set to <tt class="docutils literal"><span class="pre">False</span></tt>, the JavaScript search function
@@ -987,8 +987,8 @@ the cover image and the html template.  The rendered html cover page is
 inserted as the first item in the spine in <tt class="file docutils literal"><span class="pre">content.opf</span></tt>.  If the
 template filename is empty, no html cover page is created.  No cover at all
 is created if the tuple is empty.  Examples:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">epub_cover</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;_static/cover.png&#39;</span><span class="p">,</span> <span class="s">&#39;epub-cover.html&#39;</span><span class="p">)</span>
-<span class="n">epub_cover</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;_static/cover.png&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">epub_cover</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;static/cover.png&#39;</span><span class="p">,</span> <span class="s">&#39;epub-cover.html&#39;</span><span class="p">)</span>
+<span class="n">epub_cover</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;static/cover.png&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span>
 <span class="n">epub_cover</span> <span class="o">=</span> <span class="p">()</span>
 </pre></div>
 </div>
@@ -1543,7 +1543,7 @@ any sequence of characters <em>including</em> slashes.</td></tr>
                         title="next chapter">Internationalization</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/config.txt"
+    <li><a href="sources/config.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">

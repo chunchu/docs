@@ -10,8 +10,8 @@
     
     <title>First Steps with Sphinx &mdash; Sphinx 1.1 documentation</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,12 +22,12 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Sphinx 1.1 documentation"
-          href="_static/opensearch.xml"/>
+          href="static/opensearch.xml"/>
     <link rel="top" title="Sphinx 1.1 documentation" href="index.html" />
     <link rel="next" title="Invocation of sphinx-build" href="invocation.html" />
     <link rel="prev" title="Introduction" href="intro.html" />
@@ -40,7 +40,7 @@
   </head>
   <body>
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
-<img src="_static/sphinx.png" alt="Sphinx logo" />
+<img src="static/sphinx.png" alt="Sphinx logo" />
 </div>
 
     <div class="related">
@@ -130,7 +130,7 @@ be indented to the same level as the options are</strong>.</p>
 <p>This is exactly how the toctree for this documentation looks.  The documents to
 include are given as <a class="reference internal" href="glossary.html#term-document-name"><em class="xref std std-term">document name</em></a>s, which in short means that you
 leave off the file name extension and use slashes as directory separators.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> Read more about <a class="reference internal" href="markup/toctree.html#toctree-directive"><em>the toctree directive</em></a>.</p>
+<p><img alt="more info" class="align-middle" src="images/more.png" /> Read more about <a class="reference internal" href="markup/toctree.html#toctree-directive"><em>the toctree directive</em></a>.</p>
 <p>You can now create the files you listed in the toctree and add content, and
 their section titles will be inserted (up to the &#8220;maxdepth&#8221; level) at the place
 where the toctree directive is placed.  Also, Sphinx now knows about the order
@@ -145,7 +145,7 @@ cross-file references in a portable way (which works for all output types) using
 the <a class="reference internal" href="markup/inline.html#role-ref" title="ref role"><tt class="xref rst rst-role docutils literal"><span class="pre">ref</span></tt></a> role.</p>
 <p>For an example, if you are viewing the HTML version you can look at the source
 for this document &#8211; use the &#8220;Show Source&#8221; link in the sidebar.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> See <a class="reference internal" href="rest.html#rst-primer"><em>reStructuredText Primer</em></a> for a more in-depth introduction to
+<p><img alt="more info" class="align-middle" src="images/more.png" /> See <a class="reference internal" href="rest.html#rst-primer"><em>reStructuredText Primer</em></a> for a more in-depth introduction to
 reStructuredText and <a class="reference internal" href="markup/index.html#sphinxmarkup"><em>Sphinx Markup Constructs</em></a> for a full list of markup added by
 Sphinx.</p>
 </div>
@@ -160,7 +160,7 @@ this:</p>
 <p>where <em>sourcedir</em> is the <a class="reference internal" href="glossary.html#term-source-directory"><em class="xref std std-term">source directory</em></a>, and <em>builddir</em> is the
 directory in which you want to place the built documentation.  The <a class="reference internal" href="invocation.html#cmdoption-b"><em class="xref std std-option">-b</em></a>
 option selects a builder; in this example Sphinx will build HTML files.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> See <a class="reference internal" href="invocation.html#invocation"><em>Invocation of sphinx-build</em></a> for all options that <strong class="program">sphinx-build</strong>
+<p><img alt="more info" class="align-middle" src="images/more.png" /> See <a class="reference internal" href="invocation.html#invocation"><em>Invocation of sphinx-build</em></a> for all options that <strong class="program">sphinx-build</strong>
 supports.</p>
 <p>However, <strong class="program">sphinx-quickstart</strong> script creates a <tt class="file docutils literal"><span class="pre">Makefile</span></tt> and a
 <tt class="file docutils literal"><span class="pre">make.bat</span></tt> which make life even easier for you:  with them you only need
@@ -219,7 +219,7 @@ Sphinx will find it and create a link to it.</p>
 <p>Each domain will have special rules for how the signatures can look like, and
 make the formatted output look pretty, or add specific features like links to
 parameter types, e.g. in the C/C++ domains.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> See <a class="reference internal" href="domains.html#domains"><em>Sphinx Domains</em></a> for all the available domains and their
+<p><img alt="more info" class="align-middle" src="images/more.png" /> See <a class="reference internal" href="domains.html#domains"><em>Sphinx Domains</em></a> for all the available domains and their
 directives/roles.</p>
 </div>
 <div class="section" id="basic-configuration">
@@ -239,7 +239,7 @@ just add an additional assignment.</p>
 on.  The file is saved in UTF-8 by default, as indicated by the encoding
 declaration in the first line.  If you use non-ASCII characters in any string
 value, you need to use Python Unicode strings (like <tt class="docutils literal"><span class="pre">project</span> <span class="pre">=</span> <span class="pre">u'Exposé'</span></tt>).</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> See <a class="reference internal" href="config.html#build-config"><em>The build configuration file</em></a> for documentation of all available config values.</p>
+<p><img alt="more info" class="align-middle" src="images/more.png" /> See <a class="reference internal" href="config.html#build-config"><em>The build configuration file</em></a> for documentation of all available config values.</p>
 </div>
 <div class="section" id="autodoc">
 <h2>Autodoc<a class="headerlink" href="#autodoc" title="Permalink to this headline">¶</a></h2>
@@ -265,7 +265,7 @@ options for the auto directives, like</p>
 <p>autodoc needs to import your modules in order to extract the docstrings.
 Therefore, you must add the appropriate path to <tt class="xref py py-data docutils literal"><span class="pre">sys.path</span></tt> in your
 <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
-<p><img alt="more info" class="align-middle" src="_images/more.png" /> See <a class="reference internal" href="ext/autodoc.html#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><tt class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.autodoc</span></tt></a> for the complete description of the
+<p><img alt="more info" class="align-middle" src="images/more.png" /> See <a class="reference internal" href="ext/autodoc.html#module-sphinx.ext.autodoc" title="sphinx.ext.autodoc: Include documentation from docstrings."><tt class="xref py py-mod docutils literal"><span class="pre">sphinx.ext.autodoc</span></tt></a> for the complete description of the
 features of autodoc.</p>
 </div>
 <div class="section" id="more-topics-to-be-covered">
@@ -319,7 +319,7 @@ another directory, the <a class="reference internal" href="glossary.html#term-co
                         title="next chapter">Invocation of sphinx-build</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/tutorial.txt"
+    <li><a href="sources/tutorial.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
